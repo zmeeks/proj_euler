@@ -1,0 +1,16 @@
+*********************************
+* Project Euler; P_0005: README *
+*********************************
+* Zack M *
+
+Problem statement:
+2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+
+programming language used here: C
+
+NOTE: this problem is incredibly trivial to solve by hand:
+for 1-10, we see that all numbers can be composed by the numbers: 7,8,9,10 = 7, 4*2, 3*3, 2*5.  Furthermore since we have two 2s —> composed by 4,7,9,10.  Following this arithmetic for numbers 11-20 yields: 11,13,16/8, 17, 19. Thus the number that is divisible by all numbers 1-20 is: 4*7*9*10*11*13*2*17*19.
+Note: automating this entails looping through and finding which numbers are divisible by other numbers. Lines 11-14 are the heart of the automated solution.
+
+type 'make' followed by 'make run' to run code

@@ -1,0 +1,16 @@
+*********************************
+* Project Euler; P_0003: README *
+*********************************
+* Zack M *
+
+Problem statement:
+
+The prime factors of 13195 are 5, 7, 13 and 29.
+
+What is the largest prime factor of the number 600851475143 ?
+
+programming language used here: C
+
+Note: the solution I am using is an optimized brute force solution.  There is surely a more optimal solution.  Since the given number is not even, we immediately know that 2 is not a divisor. Whenever we find a divisor, we can take the given number and continue looking for larger divisors from where we left off, knowing that no previous numbers were divisors based on the fact that if they were, then they already would have been divisors!  I then print out the resulting numbers.  Based on this implementation, the last count value to be printed is our answer (it must be the largest prime factor).
+
+type 'make' followed by 'make run' to run code

@@ -1,0 +1,15 @@
+*********************************
+* Project Euler; P_0004: README *
+*********************************
+* Zack M *
+
+Problem statement:
+
+A palindromic number reads the same both ways. The largest palindrome made from the product of two 2-digit numbers is 9009 = 91 × 99.
+Find the largest palindrome made from the product of two 3-digit numbers.
+
+programming language used here: C
+
+NOTE: this problem is probably easier to solve in Python. I would achieve greater optimization by breaking up line 24 so that the second and third booleans have their own conditional statement so that then the division would only need to be calculated once after the first conditional.
+
+type 'make' followed by 'make run' to run code
