@@ -1,0 +1,14 @@
+*********************************
+* Project Euler; P_0007: README *
+*********************************
+* Zack M *
+
+Problem statement:
+By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+What is the 10 001st prime number?
+
+programming language used here: C++
+
+Note: My solution makes use of the fact that we only need to check odd numbers against the primes.
+
+type 'make' followed by 'make run' to run code

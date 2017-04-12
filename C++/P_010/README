@@ -1,0 +1,14 @@
+*********************************
+* Project Euler; P_0010: README *
+*********************************
+* Zack M *
+
+Problem statement:
+The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+Find the sum of all the primes below two million.
+
+programming language used here: C++
+
+Note: With current optimizations, and code running on my laptop, I get the solution in about 30 seconds.  Without the optimizations, takes just under a minute.  If I change the bitwise >> 1 to a >> 2 which will result in including the number 9 as a prime (will be off by +9), runtime drops to just over 15 seconds.  Similarly, if I want to account for >>2, then run time drops to 7+ seconds (however now the off-by count is no longer obvious).
+
+type 'make' followed by 'make run' to run code
