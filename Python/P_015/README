@@ -1,0 +1,17 @@
+*********************************
+* Project Euler; P_0015: README *
+*********************************
+* Zack M *
+
+Problem statement:
+Starting in the top left corner of a 2×2 grid, and only being able to move to the right and down, there are exactly 6 routes to the bottom right corner.
+
+
+How many such routes are there through a 20×20 grid?
+
+programming language used here: Python 2.7
+
+Note:
+This is my new favorite problem that I have solved so far. The solution can be thought of as to get to any cell directly to the right of the previous cell (on the left) there exists only one path, and for the cell beneath the cell with one path there exists two paths, and two below there exists three paths, etc. Since there is only one path for the cell below any arbitrary-above-cell, the number of paths to get to that cell is the number of paths to get to that cell from the left plus all paths from the cells above.  The recursion is simple enough to do iteratively.
+
+type 'make run' to run code
