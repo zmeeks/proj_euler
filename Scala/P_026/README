@@ -22,5 +22,6 @@ Find the value of d < 1000 for which 1/d contains the longest recurring cycle in
 programming language used here: Scala
 
 Note: The solution to this problem counts the long division depth until the first number is encountered again — this is guaranteed to happen within k-1 divisions for any number k, and hence I implemented the obvious optimization of stopping the recursion when the longest found cycle is greater than the current number (with a backwards decrementing for loop).  
+NOTE: my original solution was a simple recursion that skipped even numbers.  It was lucky in that it found the solution despite being technically incorrect.  Shortly after I solved it I realized the mistake: arbitrary even numbers modulo ten may be infinitely repeating.  I realized that my recursive solution would need a helper function.  The current solution handles any of the potential corner cases. 
 
 if you have the necessary scala compiler, then type 'make’ to run code
