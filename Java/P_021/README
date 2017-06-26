@@ -14,6 +14,6 @@ Evaluate the sum of all the amicable numbers under 10000.
 
 programming language used here: Java
 
-Note: I used the Vector class to solve this. A solution with the LinkedList class looks like it would be messier than it would be in C/C++.  This was my first program in Java.
+Note: I used the Vector class to solve this. In the current implementation I grow the vector slowly.  On further reflection I would gain serious improvements by instantiating the vector at its maximum possible size given the prime constraints and then trimming it down after I have all of the prime numbers inside of it.  Note: I make use of this observation in problem #23
 
 if you have java runtime compiler, type 'make’ to run code

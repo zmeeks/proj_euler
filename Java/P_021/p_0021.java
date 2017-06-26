@@ -32,7 +32,7 @@ public class p_0021 {
 	
 	private static void prime_init(){
 		int div = 0;
-		for(int i=3; i<317; i+=2){
+		for(int i=3; i<5000; i+=2){
 			for(int j=0; j< primes.capacity() && primes.get(j) <= Math.sqrt(i); j++){
 				
 				if((i%primes.get(j)) == 0)
@@ -48,7 +48,8 @@ public class p_0021 {
 	private static int sum_of_divisors(int num){
 		int total = 0;
 		Vector<Integer> divs = new Vector<Integer>(0,1);  
-		for(int i = 0; i < primes.capacity() && primes.get(i) <num ; i++){		
+		int primes_cap = primes.capacity();
+		for(int i = 0; i < primes_cap && primes.get(i) <num ; i++){		
 			int div_num = primes.get(i);
 			if((num%div_num)==0){
 				divs.addElement(div_num);
@@ -62,7 +63,8 @@ public class p_0021 {
 					divs.addElement(num_i*num_j);	
 			}
 		}
-		for(int i = 0; i< divs.capacity(); i++)
+		int divs_cap = divs.capacity();
+		for(int i = 0; i< divs_cap; i++)
 			total += divs.get(i);
 		return total+1;
 	}

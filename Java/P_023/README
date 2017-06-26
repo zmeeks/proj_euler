@@ -1,0 +1,26 @@
+*********************************
+* Project Euler; P_0023: README *
+*********************************
+* Zack M *
+
+Problem statement:
+A perfect number is a number for which the sum of its proper divisors is exactly equal to the number. For example, the sum of the proper divisors of 28 would be 1 + 2 + 4 + 7 + 14 = 28, which means that 28 is a perfect number.
+
+A number n is called deficient if the sum of its proper divisors is less than n and it is called abundant if this sum exceeds n.
+
+As 12 is the smallest abundant number, 1 + 2 + 3 + 4 + 6 = 16, the smallest number that can be written as the sum of two abundant numbers is 24. By mathematical analysis, it can be shown that all integers greater than 28123 can be written as the sum of two abundant numbers. However, this upper limit cannot be reduced any further by analysis even though it is known that the greatest number that cannot be expressed as the sum of two abundant numbers is less than this limit.
+
+Find the sum of all the positive integers which cannot be written as the sum of two abundant numbers.
+
+programming language used here: Java
+
+Note:
+I am reusing the functions “prime_init()” and “sum_of_divisors(int num)” that I created for problem 21 here (here modified for larger constraints of this problem’s domain).
+Note:
+Here I’m using an array as the data structure for “abundant_nums” because an array will allow O(k) search for the summation of each number giving total search to be about 0.334*n^2 which is O(n^2), whereas a list or vector would be O(m^3) for m however many abundant numbers there are which would have to be on the order of m < (n^(2/3))/3 (divide by three to make up for the constant factor) which means m would need to be less than 308, which it probably is not.
+Note:
+In prime factorization I’m searching up to n/2, which is much larger than I need to search for since while the divisors of e.g. 14 are {2,7}, any number that has only two prime factors, one of them being 2 (—> other is 1/2 of n) will never be an abundant number.  Same is true for 3.  Same is true for 5, etc. There are a lot of optimization tricks that can be implemented along these lines; however, without these tricks, my algorithm clocks about 4 seconds, which I’m fine with.
+Note: 
+the vector optimization that I thought of after problem 21 didn’t make a noticeably large difference here (on the order of half a second improvement).
+
+if you have java runtime compiler, type 'make’ to run code
