@@ -2,8 +2,6 @@ import java.util.*;
 import static java.lang.Math.sqrt;
 public class p_0023 {
 	
-	// need to figure out why sqrt of primes isn't entirely applicible here
-	
 	private static Vector<Integer> primes = new Vector<Integer>(7031,1); // note: 7031 > maximum number of possible primes 
 	private static int[] abundant_nums = new int[28124];
 	private static int[] sum_of_ab_nums = new int[28124];
