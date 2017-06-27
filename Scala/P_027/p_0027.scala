@@ -49,7 +49,6 @@ object p_0027 {
 	}
 
 	def prime_check(num:Int) : Boolean = {
-		var is_prime = 0;
 		val sqrt_v = sqrt(num)
 		val (vt, vf) = v1.partition(_ <= sqrt_v)
 		if(vt.exists(num % _ == 0))
